@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Appointment Booking</title>
+  <style>
+    body { font-family: Arial; background:#f5f7fa; padding:40px }
+    .box { background:#fff; padding:20px; max-width:400px; margin:auto; border-radius:8px }
+    input, button { width:100%; padding:10px; margin:8px 0 }
+    button { background:#2563eb; color:#fff; border:none; cursor:pointer }
+    ul { margin-top:20px; padding:0 }
+    li { list-style:none; background:#eef2ff; margin:6px 0; padding:8px; border-radius:4px }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Book Appointment</h2>
+  <input id="name" placeholder="Client Name">
+  <input id="date" type="date">
+  <input id="time" type="time">
+  <button onclick="saveBooking()">Book</button>
+
+  <ul id="list"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
